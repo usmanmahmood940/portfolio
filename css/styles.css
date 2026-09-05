@@ -805,12 +805,16 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* Profile photo */
 .logo-photo {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--line-strong);
-  box-shadow: 0 0 0 2px rgba(201, 169, 110, 0.25);
+  object-position: center top;
+  border: 2px solid rgba(201, 169, 110, 0.55);
+  box-shadow:
+    0 0 0 3px rgba(27, 54, 93, 0.9),
+    0 6px 16px rgba(0, 0, 0, 0.35);
+  background: var(--bg-elevated);
 }
 
 .hero-aside {
@@ -848,12 +852,45 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 .contact-photo {
-  width: 72px;
-  height: 72px;
-  border-radius: 18px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--line-strong);
+  object-position: center top;
   flex-shrink: 0;
+  border: 2px solid rgba(201, 169, 110, 0.6);
+  box-shadow:
+    0 0 0 4px rgba(17, 26, 46, 0.95),
+    0 10px 24px rgba(0, 0, 0, 0.4);
+  background: var(--bg-elevated);
+}
+
+.contact-photo-wrap {
+  position: relative;
+  flex-shrink: 0;
+  padding: 4px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(201, 169, 110, 0.55), rgba(27, 54, 93, 0.9));
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.contact-photo-wrap .contact-photo {
+  display: block;
+  border: 3px solid var(--bg);
+  box-shadow: none;
+}
+
+.logo-photo-wrap {
+  display: inline-flex;
+  padding: 2px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(201, 169, 110, 0.7), rgba(42, 79, 133, 0.85));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.logo-photo-wrap .logo-photo {
+  border: 2px solid var(--bg);
+  box-shadow: none;
 }
 
 .contact-intro .section-sub {
