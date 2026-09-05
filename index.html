@@ -9,6 +9,7 @@
   <meta property="og:title" content="Usman Mahmood — Android & Flutter Engineer" />
   <meta property="og:description" content="Android and Flutter engineer with ~4 years shipping Play Store and App Store apps. BLE/IoT specialist. Open to remote." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://portfolio.usmanindieapps.com/assets/profile.jpg" />
   <title>Usman Mahmood — Android &amp; Flutter Engineer</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,7 +23,7 @@
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
       <a class="logo" href="#home" aria-label="Usman Mahmood home">
-        <span class="logo-mark" aria-hidden="true">UM</span>
+        <img class="logo-photo" src="assets/profile-web.jpg" width="36" height="36" alt="" />
         <span class="logo-text">Usman Mahmood</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
@@ -74,7 +75,18 @@
             </li>
           </ul>
         </div>
-        <div class="hero-aside reveal" aria-hidden="false">
+        <div class="hero-aside reveal">
+          <figure class="profile-frame">
+            <img
+              class="profile-photo"
+              src="assets/profile.jpg"
+              width="800"
+              height="800"
+              alt="Usman Mahmood, Android and Flutter engineer"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </figure>
           <div class="hero-card">
             <div class="hero-card-glow"></div>
             <p class="hero-card-label">Focus</p>
@@ -357,8 +369,13 @@
         <div class="reveal">
           <header class="section-head">
             <p class="eyebrow">Get in touch</p>
-            <h2 id="contact-title">Let’s build something</h2>
-            <p class="section-sub">Open to remote Android / Flutter / BLE roles and product collaborations. Prefer email or LinkedIn for first contact.</p>
+            <div class="contact-intro">
+              <img class="contact-photo" src="assets/profile-web.jpg" width="72" height="72" alt="Usman Mahmood" />
+              <div>
+                <h2 id="contact-title">Let’s build something</h2>
+                <p class="section-sub">Open to remote Android / Flutter / BLE roles and product collaborations. Prefer email or LinkedIn for first contact.</p>
+              </div>
+            </div>
           </header>
           <ul class="contact-list">
             <li>

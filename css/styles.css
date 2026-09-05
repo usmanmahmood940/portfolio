@@ -801,3 +801,65 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   }
   .hero-actions .btn { width: 100%; }
 }
+
+
+/* Profile photo */
+.logo-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 0 0 2px rgba(201, 169, 110, 0.25);
+}
+
+.hero-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-frame {
+  margin: 0;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow);
+  background: var(--bg-elevated);
+  aspect-ratio: 1 / 1;
+  max-width: 420px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.contact-intro {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.contact-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid var(--line-strong);
+  flex-shrink: 0;
+}
+
+.contact-intro .section-sub {
+  margin-bottom: 0;
+}
+
+.contact-intro h2 {
+  margin-bottom: 0.35em;
+}
